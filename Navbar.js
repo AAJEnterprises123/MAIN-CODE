@@ -11,16 +11,10 @@ const Navbar = () => {
                 <img id="imageid" src='/AAJ.png' alt='aaj logo'/>
             </div>
 
-            <div className='purchaseorderbutton'>
-                <Link to="/purchaseorder">
-                    <h2>PURCHASE BUTTON</h2>
-                </Link>
-            </div>
-
             <div className='homeandlogout'>
                 <div className='home'>
                     <Link to="/home">
-                        <AiOutlineHome id="home-icon" style={{ color: 'white' }}/>
+                        <AiOutlineHome id="home-icon" style={{ color: 'black' }}/>
                     </Link>
                     <Link to="/home">
                         <h3 id='h1'>Home</h3>
@@ -31,7 +25,7 @@ const Navbar = () => {
                         <h3 id='l1'>Logout</h3>
                     </Link>
                     <Link to="/logout">
-                        <FiLogOut style={{ color: 'white' }}/>
+                        <FiLogOut style={{ color: 'black' }}/>
                     </Link>
                 </div>
             </div>

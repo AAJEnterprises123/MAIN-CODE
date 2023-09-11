@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Dropdown = (props) => {
+const Checkboxdropdown = (props) => {
   return (
     <div className='heading-dropdown-box2'>
-        <label id='dropdown-heading' htmlFor='dropdown'>{props.label}</label>
-        <select id='dropdown' name='dropdown'>
+        <div className='checkbox-heading-box'>
+            <input type="checkbox"/>
+            <label id='checkbox-dropdown-heading' htmlFor='dropdown'>{props.label}</label>
+        </div>
+        <select id='checkbox-dropdown' name='dropdown'>
             <option value="" disabled selected>
                 Select
             </option>
@@ -18,4 +21,4 @@ const Dropdown = (props) => {
   )
 }
 
-export default Dropdown;
+export default Checkboxdropdown

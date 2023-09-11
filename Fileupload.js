@@ -18,7 +18,7 @@ const Fileupload = () => {
     <div className='choose-file'>
         <input
             type="file"
-            id="fileInput"
+            id="fileinput"
             ref={fileInputRef}
             style={{ display: 'none' }}
             onChange={handleFileChange}
@@ -26,7 +26,7 @@ const Fileupload = () => {
         <button className="choose-button" onClick={handleChooseFile}>
             Choose File
         </button>
-        {selectedFileName && <p>{selectedFileName}</p>}
+        {selectedFileName ? <p id='chosen-file-name'>{selectedFileName}</p> : <p id='no-file-chosen'>No File Chosen</p>}
     </div>
   )
 }
